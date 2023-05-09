@@ -89,7 +89,7 @@
             navigator.serviceWorker.register('./uv.sw-handler.js', {
                 scope: '/'
             }).then(() => {
-                let url = atob(decodeURIComponent(window.location.hash.slice(1)));
+                let url = (decodeURIComponent(window.location.hash.slice(1));
                 let search;
                 switch (localStorage.getItem('incog||search')) {
                     case 'google':
